@@ -414,7 +414,7 @@ dependencies = [
 [[package]]
 org = "ballerinax"
 name = "ai.microsoft.sharepoint"
-version = "1.0.1"
+version = "1.0.2"
 dependencies = [
 	{org = "ballerina", name = "ai"},
 	{org = "ballerina", name = "http"},
