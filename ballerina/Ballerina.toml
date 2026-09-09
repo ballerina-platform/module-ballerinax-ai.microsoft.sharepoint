@@ -17,7 +17,7 @@ graalvmCompatible = true
 groupId = "io.ballerina.lib"
 artifactId = "ai.microsoft.sharepoint-native"
 version = "1.0.2"
-path = "../native/build/libs/ai.microsoft.sharepoint-native-1.0.2-SNAPSHOT.jar"
+path = "../native/build/libs/ai.microsoft.sharepoint-native-1.0.2.jar"
 
 # Apache Tika core + PDF parser module. This loader extracts text from PDFs only;
 # the Office (POI) stack is intentionally not shipped (see the README and `classify`).
@@ -57,10 +57,3 @@ version = "1.8.17"
 groupId = "commons-io"
 artifactId = "commons-io"
 version = "2.20.0"
-
-
-[[dependency]]
-org="ballerina"
-name="ai"
-version="1.12.0"
-repository="local"
