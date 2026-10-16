@@ -32,7 +32,6 @@ dependencies {
     implementation group: 'org.apache.tika', name: 'tika-parser-pdf-module', version: "${tikaVersion}"
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
-}
+// No sourceCompatibility/targetCompatibility pin here: the compile target follows the JDK the
+// build runs on. Pinning it to Java 21 breaks the "Extra JDK Compatibility" CI job, where Gradle
+// rejects the JVM 25-only ballerina-runtime of newer Ballerina distributions for a 21 target.
